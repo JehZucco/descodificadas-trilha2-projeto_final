@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="shortcut icon" href="assets/img/logo.ico" type="imagem/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/form.css">
+</head>
+<body>
+    <header>
+        <div class="menu-fixo">
+            <div class="logo">
+                <img alt="logo" src="assets/img/logo.png" height="50" width="50">
+                <p class="logo">descod.</p>
+            </div>    
+            <div class="menu">
+                <nav class="dropdown">
+                    <a id="dropbtn" onclick="mostraDropdown()">Menu</a>
+                    <div class="dropdown-conteudo" id="dropdown-caixa">
+                        <a href="#menu-mensagem">Mensagem</a>
+                        <a href="./index.html">Home</a>
+                        <a onclick="escondeDropdown()" class="fechar-menu"></a>  
+                    </div>
+                </nav>
+            </div> 
+       </div>
+        </div>
+        
+         <div class="content">
+            <h1 class="textCenter">Contato</h1>
+       </div>  
+    </header>     
+    <main class="amarelo">
+        <form class="textCenter" id="menu-mensagem">
+            <p>Entre em contato conosco para agendar uma avaliação física ou tirar dúvidas!<br>
+            Estamos à disposição das 6h às 22h, exceto aos domingos.</p>
+            <div>
+                <label>Nome:</label><br>
+                <input type="text" placeholder="Digite seu nome" class="cinza campos"/>
+            </div>
+            <div>
+                <label>Telefone para contato:</label><br>
+                <input type="tel" placeholder="Digite seu telefone" class="cinza campos">
+            </div>
+            <div>
+                <label>Mensagem</label><br>
+                <textarea placeholder="Digite sua Mensagem" rows="5" cols="50" class="cinza campos"></textarea>
+            </div>    
+            <div>
+                <div class="base-button--contato">
+                    <button id="button-contato">Enviar</button>
+                </div>    
+            </div>
+        </form>   
+    </main>
+    <footer class="cinza textCenter">
+        <p>Criado por Jéssica Zucco</p>
+        <p>Academia fictícia - 
+        site criado com propósitos educacionais no curso Descodificadas</p>
+    </footer>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

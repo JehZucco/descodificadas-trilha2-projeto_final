@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descod.</title>
+    <meta name="description" content="Descubra uma academia focada em seu bem-estar e qualidade de vida. Na nossa academia fictícia, oferecemos exercícios e programas de fitness para todas as idades, sem pressão estética ou objetivos de bodybuilding. Venha para uma vida saudável e ativa!">
+    <meta name="keywords" content="academia, fitness, bem-estar, atividade física, saúde, exercícios, qualidade de vida, adolescente, adulto, vida saudável, exercícios para saúde, academia sem pressão estética, fitness para uma vida saudável, bem-estar sem objetivos de bodybuilding">
+    <link rel="shortcut icon" href="assets/img/logo.ico" type="imagem/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/estilo.css">
+</head>
+<body>
+
+    <header>
+       <div class="menu-fixo">
+            <div class="logo">
+                <img alt="logo" src="assets/img/logo.png" height="50" width="50">
+                <p class="logo">descod.</p>
+            </div>    
+
+            <div class="menu">
+                <nav class="dropdown">
+                    <a id="dropbtn" onclick="mostraDropdown()">Menu</a>
+                    <div class="dropdown-conteudo" id="dropdown-caixa">
+                        <a href="#menu-planos">Planos</a>
+                        <a href="#menu-cursos">Cursos</a>
+                        <a href="#menu-local">Local</a>
+                        <a href="./contato.html">Contato</a>
+                        <a onclick="escondeDropdown()" class="fechar-menu"></a>  
+                    </div>
+                </nav>
+            </div> 
+       </div>
+      
+
+        <div class="content">
+            <h1 class="textCenter">Academia<br> Descod.</h1>
+            <p class="slogan">Saúde e bem-estar parar todos!</p>
+       </div>  
+    </header>
+
+    <main>
+        <section class="frase amarelo textCenter">
+            <p class="p-frase">Atendimento personalizado e mensalidades acessíveis</p>
+            <br>
+            <div class="base-button">
+                <a href="./contato.html"><button>Agendar avaliação física</button></a>
+            </div>
+        </section>
+
+        <section class="planos cinza" id="menu-planos">
+            <h2>Planos</h2>
+            <div class="div-cards">
+                <div class="card">
+                    <p>Plano <span class="modalidade">trimestral</span> por apenas</p>
+                    <p><span>249,90</span></p>
+                    <p>e você tem incluso:</p>
+                    <p>
+                        Musculação<br>
+                        Treinamento funcional<br>
+                        Cursos<br>
+                        Alongamento<br>
+                        Estacionamento<br>
+                    </p>
+                </div>
+                <div class="card">
+                    <p>Plano <span class="modalidade">mensal</span> por apenas</p>
+                    <p><span>99,90</span></p>
+                    <p>e você tem incluso:</p>
+                    <p>
+                        Musculação<br>
+                        Treinamento funcional<br>
+                        Cursos<br>
+                        Alongamento<br>
+                        Estacionamento<br>
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+
+        <section class="cursos amarelo textCenter" id="menu-cursos">
+            <h2>Cursos</h2>
+            <ul class="carrossel">
+                <li>
+                    <input type="radio" id="slide1" name="slide" checked>
+                    <label for="slide1"></label>
+                    <img src="./assets/img/yoga.jpg" alt="mulher fazendo yoga">
+                    <p>Aulas de Yoga</p>
+                </li>
+                <li>
+                    <input type="radio" id="slide2" name="slide">
+                    <label for="slide2"></label>
+                    <img src="./assets/img/muaithai.jpg" alt="Mulher fazendo Muay Thai">
+                    <p>Aulas de Muay Thai</p>
+                </li>
+                <li>
+                    <input type="radio" id="slide3" name="slide">
+                    <label for="slide3"></label>
+                    <img src="./assets/img/zumba.jpg" alt="Mulher fazendo Zumba">
+                    <p>Aulas de Zumba</p>
+                </li>
+
+            </ul>
+        </section>
+
+        <section class="video cinza">
+            <h2>Conquiste mais saúde e disposição para aproveitar o seu dia a dia!</h2>
+            <video controls autoplay>
+            <source src="assets/img/pexels-ekaterina-bolovtsova-5974458.mp4" type="video/mp4">
+            </video>
+            <p>crédito vídeo: pexels-ekaterina-bolovtsova-5974458</p>
+            <div class="base-button">
+                <a href="./contato.html"><button class="botao-amarelo">Agendar avaliação física</button></a>
+            </div>
+        </section>
+
+        <section class="amarelo local textCenter" id="menu-local">
+            <div class="linhaUm">
+                <h2>Local</h2>
+                <p>Lapa - PR</p>
+            </div>  
+            <div class="linhaDois">
+                <figure>
+                <img class="img" alt="Mulher treinando com halter"  
+                src="assets/img/pexels-julia-larson-6455925.jpg"
+                width="200px"/>
+                <figcaption>crédito imagem: pexels-julia-larson-6455925</figcaption>
+                </figure>
+                <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.023675053348!2d-49.71900782368824!3d-25.769781546424213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dd758b2816eb1d%3A0x612c1e378c275379!2sCentro%20Hist%C3%B3rico%20da%20Lapa!5e0!3m2!1spt-BR!2sde!4v1700070570646!5m2!1spt-BR!2sde" 
+                width="400" height="300" style="border:0;" allowfullscreen="" 
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <div class="linhaTres">
+                <p>Acesso fácil e estacionamento próprio!</p>
+            </div>
+        </section>
+
+        <section class="frase cinza textCenter">
+            <p>Uma vida com mais saúde e disposição te espera!</p>
+            <br>
+            <div class="base-button">
+                <a href="./contato.html"><button class="botao-amarelo">Agendar avaliação física</button></a>
+            </div>
+        </section> 
+    </main>
+
+    <footer class="amarelo textCenter">
+        <p>Criado por Jéssica Zucco</p>
+        <p>Academia fictícia - 
+        site criado com propósitos educacionais no curso Descodificadas</p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
